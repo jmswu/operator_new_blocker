@@ -1,5 +1,8 @@
+FLAGS_GC  		:= -ffunction-sections -fdata-sections -Wl,-gc-section
+FLAGS_OTHERS 	:= -Wall -Wextra -Weffc++
+
 BLOCK:
-	g++ main.cpp -DBLOCK -ffunction-sections -fdata-sections -Wl,-gc-section; ./a.out
+	g++ main.cpp -DBLOCK  $(FLAGS_GC) $(FLAGS_OTHERS); ./a.out
 
 NO_BLOCK:
-	g++ main.cpp -ffunction-sections -fdata-sections -Wl,-gc-section; ./a.out
+	g++ main.cpp -DNO_BLOCK $(FLAGS_GC) $(FLAGS_OTHERS); ./a.out
