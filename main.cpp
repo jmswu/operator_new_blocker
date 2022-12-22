@@ -16,8 +16,10 @@ int main(void)
     std::printf("Hello world, non blocking\n");
 #endif
 
-    // uncomment to test
-    // auto val = new int(1);
+#ifdef TEST
+    auto val = new int(1);
+    (void)val;  // stop compiler warrning
+#endif
 
     return EXIT_SUCCESS;
 }
