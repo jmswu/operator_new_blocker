@@ -5,6 +5,8 @@
 #include "new_blocker.hpp"
 #endif
 
+// void *operator new(std::size_t) = delete;
+// void *operator new[](std::size_t) = delete;
 
 int main(void)
 {
