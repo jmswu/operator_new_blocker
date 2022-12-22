@@ -14,7 +14,8 @@ int main(void)
     std::printf("Hello world, non blocking\n");
 #endif
 
-    auto val = new int(1);
+    // uncomment to test
+    // auto val = new int(1);
 
     return EXIT_SUCCESS;
 }
