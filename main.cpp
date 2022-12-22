@@ -19,7 +19,7 @@ int main(void)
 
 #ifdef TEST
     auto val = new int(1);
-    (void)val;  // stop compiler warrning
+    std::printf("val = %i\n", *val);
 #endif
 
     return EXIT_SUCCESS;

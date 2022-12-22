@@ -9,3 +9,6 @@ BLOCK_TEST:
 
 NO_BLOCK:
 	g++ main.cpp -DNO_BLOCK $(FLAGS_GC) $(FLAGS_OTHERS); ./a.out
+
+NO_BLOCK_TEST:
+	g++ main.cpp -DNO_BLOCK -DTEST $(FLAGS_GC) $(FLAGS_OTHERS); ./a.out
